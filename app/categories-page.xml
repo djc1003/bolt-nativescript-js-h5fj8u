@@ -1,0 +1,11 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Categories" icon="" />
+    <GridLayout>
+        <ListView items="{{ categories }}" itemTap="{{ onCategoryTap }}">
+            <ListView.itemTemplate>
+                <Label text="{{ name }}" class="p-2 text-lg" />
+            </ListView.itemTemplate>
+        </ListView>
+        <ActivityIndicator busy="{{ isLoading }}" />
+    </GridLayout>
+</Page>

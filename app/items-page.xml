@@ -1,0 +1,11 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Items List" icon="" />
+    <ListView items="{{ items }}">
+        <ListView.itemTemplate>
+            <StackLayout class="p-2">
+                <Label text="{{ name }}" class="text-lg" />
+                <Label text="{{ description }}" class="text-sm text-gray-500" textWrap="true" />
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</Page>
